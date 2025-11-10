@@ -75,32 +75,10 @@ Any internal application sends a simple, standardized request to this endpoint.
 * **Endpoint:** `http://localhost:8081/api/v1/notify`
 * **Content-Type:** `application/json`
 
-**Sample Request Body (JSON) for EMAIL:**
-
-```json
-{
-  "recipient": "recipient@company.com",
-  "subject": "Invoice Ready: #INV-2024",
-  "body": "Your invoice is attached and ready for payment.",
-  "type": "EMAIL", 
-  "serviceIdentifier": "BILLING_SERVICE" 
-}
-
-Sample Request Body (JSON) for SMS:
-
-JSON
-
-{
-  "recipient": "+15551234567",
-  "subject": "SMS Alert",
-  "body": "Your account has been updated.",
-  "type": "SMS", 
-  "serviceIdentifier": "ACCOUNT_SERVICE" 
-}
-3. Running Unit Tests
+### 3. Running Unit Tests
 To confirm the service logic and routing is correct:
 
-Command: mvn clean test
+* **Command:** `mvn clean test`
 
-📄 License
+## 📄 License
 This project is open-source and available under the MIT License.
